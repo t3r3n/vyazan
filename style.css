@@ -1,0 +1,139 @@
+/*
+font-family: 'Alegreya', serif;
+font-family: 'Alegreya SC', serif;
+*/
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b8b8b8;
+    height: 73px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 23px 1px 29px;
+    font-family: 'Alegreya', serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+nav.mainnav {
+    flex-grow: 1;
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'Alegreya', serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+a.mainlink, a.mainlink:visited, a.mainlink:hover {
+    color: #1a1a1a;
+    text-decoration: none;
+    display: block;
+    padding: 10px 22px;
+}
+
+a.mainlink:hover {
+    text-decoration: underline;
+}
+
+a.active, a.active:visited, a.active:hover {
+    display: block;
+    color: #757575;
+}
+
+nav.topicons {
+    display: flex;
+    margin: 13px 13px 0 0;
+}
+
+a.topicon, a.topicon:visited, a.topicon:hover {
+    display: block;
+    padding: 11px;
+}
+
+a.topicon:hover {
+    opacity: .6;
+}
+
+.hugs {
+    height: 622px;
+    background-image: url('pics/hugs.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hugs h2 {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 500;
+    font-size: 96px;
+    margin: 0;
+    position: absolute;
+    right: 24px;
+    bottom: 36px;
+    letter-spacing: 1.1px;
+}
+
+.hugs p {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
+    font-size: 29px;
+    margin: 0;
+    position: absolute;
+    left: 17px;
+    top: 33px;
+    width: 540px;
+    line-height: 140%;
+    letter-spacing: .4px;
+}
+
+footer {
+    border: 1px solid #b8b8b8;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 66px 0 92px;
+}
+
+.footercol1 {
+    width: 170px;
+}
+
+.footercol2 {
+    width: 190px;
+}
+
+.footercol3 {
+    width: 210px;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #828282;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+footer a, footer a:visited, footer a:hover {
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    color: #828282;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
