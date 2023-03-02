@@ -1,23 +1,18 @@
-/*
-font-family: 'Alegreya', serif;
-font-family: 'Alegreya SC', serif;
-*/
-
 body {
     margin: 0;
+    font-family: 'Alegreya', serif;
 }
 
 header {
     display: flex;
     align-items: center;
     border: 1px solid #b8b8b8;
-    height: 73px;
+    min-height: 73px;
     box-sizing: border-box;
 }
 
-h1 {
+div.logo {
     margin: 0 23px 1px 29px;
-    font-family: 'Alegreya', serif;
     font-weight: 500;
     font-size: 45px;
 }
@@ -26,24 +21,28 @@ nav.mainnav {
     flex-grow: 1;
     text-transform: uppercase;
     display: flex;
-    font-family: 'Alegreya', serif;
     font-weight: 500;
     font-size: 20px;
     margin-top: 9px;
 }
 
-a.mainlink, a.mainlink:visited, a.mainlink:hover {
+a.mainlink,
+a.mainlink:visited,
+a.mainlink:hover {
     color: #1a1a1a;
     text-decoration: none;
     display: block;
     padding: 10px 22px;
+    white-space: nowrap;
 }
 
 a.mainlink:hover {
     text-decoration: underline;
 }
 
-a.active, a.active:visited, a.active:hover {
+a.active,
+a.active:visited,
+a.active:hover {
     display: block;
     color: #757575;
 }
@@ -53,17 +52,21 @@ nav.topicons {
     margin: 13px 13px 0 0;
 }
 
-a.topicon, a.topicon:visited, a.topicon:hover {
+button.topicon,
+a.topicon:hover {
     display: block;
-    padding: 11px;
+    padding: 12px 11px;
+    border: 0;
+    background: none;
 }
 
-a.topicon:hover {
+button.topicon:hover {
     opacity: .6;
 }
 
-.hugs {
-    height: 622px;
+.presentation {
+    font-family: 'Alegreya SC', serif;
+    min-height: 622px;
     background-image: url('pics/hugs.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,8 +74,7 @@ a.topicon:hover {
     position: relative;
 }
 
-.hugs h2 {
-    font-family: 'Alegreya SC', serif;
+.presentation p {
     font-weight: 500;
     font-size: 96px;
     margin: 0;
@@ -80,10 +82,10 @@ a.topicon:hover {
     right: 24px;
     bottom: 36px;
     letter-spacing: 1.1px;
+    text-transform: uppercase;
 }
 
-.hugs p {
-    font-family: 'Alegreya SC', serif;
+.presentation h1 {
     font-weight: 400;
     font-size: 29px;
     margin: 0;
@@ -98,7 +100,6 @@ a.topicon:hover {
 footer {
     border: 1px solid #b8b8b8;
     box-sizing: border-box;
-    font-family: 'Alegreya', serif;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -125,7 +126,9 @@ footer h3 {
     margin-bottom: 4px;
 }
 
-footer a, footer a:visited, footer a:hover {
+footer a,
+footer a:visited,
+footer a:hover {
     font-weight: 500;
     font-size: 25px;
     text-decoration: none;
@@ -137,3 +140,46 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 930px) {
+    .presentation h1 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .presentation p {
+        background-color: rgba(242, 240, 234, .5);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footercol1, .footercol2, .footercol3 {
+        width: auto;
+    }
+
+    div.logo {
+        font-size: 30px;
+    }
+
+    nav.mainnav {
+        font-size: 16px;
+    }
+
+    a.mainlink, a.mainlink:visited, a.mainlink:hover {
+        padding: 10px 8px;
+    }
+
+    footer {
+        padding: 28px 0 30px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+    
+    footer a,
+    footer a:visited,
+    footer a:hover {
+        font-size: 16px;
+    }
+}
